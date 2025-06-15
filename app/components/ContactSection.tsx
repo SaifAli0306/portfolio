@@ -1,8 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { section } from 'framer-motion/client';
-
+ 
 export default function ContactSection() {
 	return (
 		<section className="py-20 px-4 bg-black text-white">

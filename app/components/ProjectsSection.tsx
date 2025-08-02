@@ -55,20 +55,34 @@ export default function ProjectsSection() {
             Final year university project – Simplifies job search and resume creation.
           </div>
         </motion.div>
+         {/* ✅ LeetMatrix Project - Completed */}
+       <motion.div
+         initial={{ opacity: 0, y: 20 }}
+         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+         className="bg-gray-900/30 border border-purple-700 rounded-lg p-8 space-y-4"
+>
+      <h3 className="text-2xl font-semibold text-purple-400">LeetMatrix App</h3>
+      <p className="text-gray-300">
+    🚀 A web app that visualizes LeetCode progress, difficulty-wise stats, ranking, and recent submissions using GraphQL and Node.js backend.
+     </p>
+      <div className="text-sm text-gray-400">
+       Stack: React, Tailwind CSS, Node.js, GraphQL, Vercel
+      </div>
+       <div className="pt-2">
+        <a
+      href="https://leetmatrix.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium px-4 py-2 rounded-md transition"
+    >
+      🔗 Visit LeetMatrix
+    </a>
+  </div>
+</motion.div>
 
-        {/* 🛠️ New Project - In Progress */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="bg-gray-900/30 border border-dashed border-purple-700 rounded-lg p-8 space-y-4"
-        >
-          <h3 className="text-2xl font-semibold text-purple-500">Job Portal Web App</h3>
-          <p className="text-gray-400 italic">🛠 In Progress – A web-based job portal platform to connect candidates and employers with dynamic filtering and resume matching capabilities.</p>
-          <div className="text-sm text-gray-500">
-            Planned Stack: React, ASP.NET Core, Firebase, Tailwind CSS
-          </div>
-        </motion.div>
+ 
+
       </div>
     </section>
   );
